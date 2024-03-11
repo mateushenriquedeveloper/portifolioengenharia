@@ -1,0 +1,56 @@
+
+/* Estilos para o carrossel de imagens */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(95deg, beige, #f4f4f4);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    margin-bottom: 20px; /* Adiciona margem inferior entre os carrosséis */
+}
+
+.carousel img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+    transform: scale(1.05);
+}
+
+.descricao {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.btn {
+display: inline-block;
+padding: 10px 20px;
+font-size: 18px;
+color: #fff;
+background-color: grey;
+border: none;
+border-radius: 5px;
+text-decoration: none;
+transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+background-color: #000000;
+}

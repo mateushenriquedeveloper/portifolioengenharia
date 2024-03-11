@@ -1,0 +1,86 @@
+
+        /* Estilos CSS para a página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(95deg, black, white);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: burlywood;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            -ms-layout-grid-mode: 20px;
+            transition: background-color 0.9s ease; /* Adiciona uma transição suave ao realce */
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: grey;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #000000;
+        }
+        header:hover {
+            background-color: #a19483; /* Altera a cor de fundo quando o mouse passa sobre o cabeçalho */
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        /* Estilos CSS para dispositivos móveis */
+        @media screen and (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+        /* Estilos CSS para o carrossel de imagens */
+        .carousel {
+            display: flex;
+            overflow-x: hidden; /* Remover a barra de rolagem horizontal */
+            overflow-y: hidden; /* Remover a barra de rolagem vertical */
+            white-space: nowrap;
+            scroll-snap-type: x mandatory;
+            scroll-padding: 50%;
+            scroll-behavior: smooth;
+            position: relative; /* Posiciona o slider em relação ao seu posicionamento normal */
+            top: 95px; /* Move o slider 50px para baixo do topo da página */
+            width: 80%; /* Define a largura do slider como 80% da largura total da tela */
+            margin: 0 auto; /* Centraliza o slider horizontalmente */
+        }
+        .carousel img {
+            scroll-snap-align: center;
+            width: 100%;
+            height: auto;
+            border-radius: 10px; /* Adiciona bordas arredondadas às imagens */
+        }
+        /* Estilos CSS adicionais para colorir a página */
+        h1, h2, h3, h4, h5 {
+            color: whitesmoke;
+        }
+        p {
+            color: whitesmoke;
+        }
+  

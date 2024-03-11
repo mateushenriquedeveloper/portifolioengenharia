@@ -1,0 +1,185 @@
+/* Estilos CSS para a página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: linear-gradient(95deg, black, white);
+    background-size: 400% 400%; /* Define o tamanho do gradiente */
+    animation: gradientAnimation 10s ease infinite; /* Adiciona a animação ao gradiente */
+}
+
+/* Definição da animação */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+header {
+    background-color: burlywood;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.9s ease;
+}
+
+header:hover {
+    background-color: #a19483;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.carousel {
+    display: flex;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    overflow: hidden; /* Adicionando overflow: hidden */
+}
+
+.carousel img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+    transform: scale(1.05);
+}
+
+.texto {
+    margin-top: 20px;
+    max-width: 100%;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.imagem-perfil {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    transition: border 0.3s ease;
+}
+
+.imagem-perfil:hover {
+    border: 5px solid blue;
+}
+
+.icones-laterais {
+    position: fixed;
+    top: 65%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+}
+
+.icones-laterais img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.icones-laterais img:hover {
+    transform: scale(1.1);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: grey;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #000000;
+}
+
+.menu-lateral {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    background-color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    z-index: 999;
+    flex-direction: column;
+}
+
+.menu-lateral a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.menu-lateral img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.menu-lateral img:hover {
+    transform: scale(1.1);
+}
+
+.btn-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    z-index: 10000;
+}
+
+.btn-menu:hover {
+    color: #ccc;
+}

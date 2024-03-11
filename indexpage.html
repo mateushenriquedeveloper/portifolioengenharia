@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Minha Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styleindex.css">
+</head>
+<body>
+    <header>
+        <h1>Técnico em Edificações | Mateus Henrique</h1>
+        <p>SISTEC: 38647/110459542CM</p>
+        <nav>
+            <ul>
+                <li><a href="inicio.html" class="nav-link btn">Videos Projetos</a></li>
+                <li><a href="certificados.html" class="nav-link btn">Certificados</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=5545984184074" class="nav-link btn">WhatsApp</a></li>
+                <li><a href="mailto:mateus.henrique.ifpr@gmail.com" class="nav-link btn">Enviar e-mail</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div style="position: relative; text-align: center;">
+        <img src="perfil.jpg" alt="Descrição da imagem" class="imagem-perfil">
+        <div class="texto">
+            <p>Mateus Henrique Fonseca Xavier da Silva</p>
+            <p>Softwares:</p>
+            <p>Projeto Arquitetônico Revit</p>
+            <p>Planta baixa Revit</p>
+            <p>Projeto Elétrico - Revit</p>
+            <p>Planta baixa Autocad</p>
+            <p>Renderização Externa -Twinimotion</p>
+            <p>Renderização Externa 3DS max chaos cosmos</p>
+            <p>Pacote Office: Word, PowerPoint e Excel</p>
+            <p>Programação Web: HTML, CSS, JavaScript + Copilot - VS Code</p>
+            <p>Canvas Design</p>
+            <p>Planejamento de construção MS Project</p>
+        </div>
+    </div>
+    <div class="btn-menu" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="menu-lateral" id="menu-lateral">
+        <a href="revit.html"><img src="revit.jpg" alt="Revit"></a>
+        <a href="autocad.html"><img src="autocad.jpg" alt="AutoCAD"></a>
+        <a href="3dsmax.html"><img src="3dsmax.jpg" alt="3ds Max"></a>
+        <a href="twinimotion.html"><img src="twinimotion.jpg" alt="Twinmotion"></a>
+        <a href="https://github.com/mateushenriquedeveloper"> <img src="github.jpg" alt="github"></a>
+        <a href="vscode.html"><img src="vscode.jpg" alt="VS Code"></a>
+    </div>
+    <div class="container1">
+        <div class="carousel" id="carousel1">
+            <img src="twinimotion1.jpg" alt="twinimotion1.jpg">
+            <img src="twinimotion2.jpg" alt="twinimotion2.jpg" style="display: none;">
+            <img src="twinimotion3.jpg" alt="twinimotion3.jpg" style="display: none;">
+            <img src="twinimotion4.jpg" alt="twinimotion4.jpg" style="display: none;">
+            <img src="twinimotion5.jpg" alt="twinimotion5.jpg" style="display: none;">
+            <img src="twinimotion6.jpg" alt="twinimotion6.jpg" style="display: none;">
+            <img src="twinimotion7.jpg" alt="twinimotion7.jpg" style="display: none;">
+        </div>
+        <div class="texto">
+            <p>Renderização com Twinmotion</p>
+            <p>Projetos renderizados com o Twinmotion, destacando aspectos de design e visualização de projetos arquitetônicos.</p>
+        </div>
+    </div>
+    
+        
+    </div>
+    <div class="container">
+        <button onclick="moveCarouselLeft('carousel2')">Anterior</button>
+        <div class="carousel" id="carousel2">
+            <img src="revit1.jpg" alt="revit1.jpg">
+            <img src="revit2.jpg" alt="revit2.jpg">
+            <img src="revit3.jpg" alt="revit3.jpg">
+        </div>
+        <button onclick="moveCarouselRight('carousel2')">Próximo</button>
+        <div class="texto">
+            <p>Projetos em Revit</p>
+            <p>projetos em Revit, incluindo plantas baixas, projetos arquitetônicos e elétricos.</p>
+        </div>
+    </div>
+    <div class="container">
+        <button onclick="moveCarouselLeft('carousel3')">Anterior</button>
+        <div class="carousel" id="carousel3">
+            <img src="3dsmax1.jpg" alt="3dsmax1.jpg">
+            <img src="3dsmax2.jpg" alt="3dsmax2.jpg">
+            <img src="3dsmax3.jpg" alt="3dsmax3.jpg">
+            <img src="3dsmax4.jpg" alt="3dsmax4.jpg">
+        </div>
+        <button onclick="moveCarouselRight('carousel3')">Próximo</button>
+        <div class="texto">
+            <p>Projetos em 3ds Max</p>
+            <p>Renderizações e modelos criados com o software 3ds Max, demonstrando projetos de design e visualização arquitetônica.</p>
+        </div>
+    </div>
+    <div class="container">
+        <button onclick="moveCarouselLeft('carousel4')">Anterior</button>
+        <div class="carousel" id="carousel4">
+            <img src="autocad1.jpg" alt="autocad1.jpg">
+            <img src="autocad2.jpg" alt="autocad2.jpg">
+            <img src="autocad3.jpg" alt="autocad3.jpg">
+        </div>
+        <button onclick="moveCarouselRight('carousel4')">Próximo</button>
+        <div class="texto">
+            <p>Projetos em Autocad</p>
+            <p>Projetos desenvolvidos no Autocad, incluindo plantas baixas e detalhes arquitetônicos.</p>
+        </div>
+    </div>
+
+    <script src="scriptindex.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+
+/* ... */
+/* Estilos CSS para o carrossel de imagens */
+.carousel {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 50%;
+    scroll-behavior: smooth;
+}
+.carousel img {
+    scroll-snap-align: center;
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Adiciona bordas arredondadas às imagens */
+}
+/* Estilos CSS para o vídeo */
+.carousel video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+
+.btn {
+display: inline-block;
+padding: 10px 20px;
+font-size: 18px;
+color: #fff;
+background-color: grey;
+border: none;
+border-radius: 5px;
+text-decoration: none;
+transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+background-color: #000000;
+}
+
+/* ... */
