@@ -57,21 +57,21 @@ nav ul li a {
     color: #fff;
 }
 
-.carousel {
+.carousel, .carousel1 {
     display: flex;
     white-space: nowrap;
     margin-bottom: 20px;
     overflow: hidden; /* Adicionando overflow: hidden */
 }
 
-.carousel img {
+.carousel img, .carousel1 img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
-.carousel img:hover {
+.carousel img:hover, .carousel1 img:hover{
     transform: scale(1.05);
 }
 
